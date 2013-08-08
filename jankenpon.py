@@ -3,7 +3,7 @@ import random
 jogador="" 
 
 while (jogador != "pedra" and jogador != "papel" and jogador != "tesoura"):
-	jogador=raw_input("Pedra, Papel ou Tesoura?:\t") 
+	jogador=raw_input("Pedra, Papel ou Tesoura?: ") 
 	jogador=jogador.lower() 
 
 dicionario=["pedra","papel","tesoura"] 
@@ -31,7 +31,7 @@ def resultado(jogador,computador):
 		return "Ganhou"
 	if jogador=="tesoura" and computador==3:
 		return "Empatou"
-	print "\nJogador:\t", jogador
-	print "Computador:\t", dicionario[computador-1] 
-	print "\n"
-	print resultado(jogador,computador) 
+print "\nJogador:\t", jogador
+print "Computador:\t", dicionario[computador-1] 
+print "\n"
+print resultado(jogador,computador) 
